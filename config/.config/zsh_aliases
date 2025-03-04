@@ -1,0 +1,13 @@
+# Neovim
+alias vim='nvim'  # Use Neovim instead of Vim when typing 'vim'
+
+# Shell
+alias ls='lsd'                     # Replace 'ls' with 'lsd' for a modern listing with icons
+alias ll='ls -lah'                 # List all files in long format with human-readable sizes and hidden files
+alias la='ls -A'                   # List all files excluding '.' and '..'
+alias lt='ls --tree'               # Display directory structure in a tree format
+alias cls='clear'                  # Clear the terminal screen
+alias ..='cd ..'                   # Move up one directory level
+alias ...='cd ../..'               # Move up two directory levels
+alias ....='cd ../../..'           # Move up three directory levels
+alias grep='grep --color=auto'     # Enable colored output for grep

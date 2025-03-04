@@ -19,4 +19,5 @@ require("lazy").setup({
   require("mantou.plugins.lualine"),
   require("mantou.plugins.treesitter"),
   require("mantou.plugins.telescope"),
+  require("mantou.plugins.vimtex"),
 })
