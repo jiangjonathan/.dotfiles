@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+*.swp
+*.swo
+*.un~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Node or Python dependencies (if any)
+node_modules/
+__pycache__/
+
+# Sensitive or private files
+.env
+
+# Misc
+conversations/

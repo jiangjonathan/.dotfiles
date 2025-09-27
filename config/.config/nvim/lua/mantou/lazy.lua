@@ -1,8 +1,8 @@
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+    vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -10,14 +10,15 @@ vim.opt.rtp:prepend(lazypath)
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = " "
 
 -- Setup lazy.nvim
 require("lazy").setup({
-  require("mantou.plugins.colorscheme"),
-  require("mantou.plugins.oil"),
-  require("mantou.plugins.lualine"),
-  require("mantou.plugins.treesitter"),
-  require("mantou.plugins.telescope"),
-  require("mantou.plugins.vimtex"),
+    require("mantou.plugins.colorscheme"),
+    require("mantou.plugins.oil"),
+    require("mantou.plugins.lualine"),
+    require("mantou.plugins.treesitter"),
+    require("mantou.plugins.telescope"),
+    require("mantou.plugins.vimtex"),
+    require("mantou.plugins.mason"),
 })

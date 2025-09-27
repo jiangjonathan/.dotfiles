@@ -1,0 +1,4 @@
+Openinterminal fix for wezterm nvim
+
+defaults write /Users/<USERNAME>/Library/Group\ Containers/group.wang.jianing.app.OpenInTerminal/Library/Preferences/group.wang.jianing.app.OpenInTerminal.plist NeovimCommand "open -na wezterm --args start /bin/zsh -l -c '/opt/homebrew/bin/nvim PATH; exec zsh'"
+
